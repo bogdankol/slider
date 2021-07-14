@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+img {
+  display: block;
+}
+.slider-section {
+  margin: 30px auto;
+  width: 600px;
+  height: 400px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.slider-div {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  position: relative;
+  box-shadow: 0px 0px 20px 3px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+
+  background-color: rgba(255, 255, 0, 0.7);
+}
+.prev-image {
+  height: 100%;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 300ms linear;
+
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.next-image {
+  height: 100%;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transition: background-color 300ms linear;
+
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.div-dots {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  transition: background-color 300ms linear;
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
